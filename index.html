@@ -32,18 +32,43 @@
             fontFamily: {
               figtree: "Figtree, sans-serif",
             },
+            boxShadow: {
+             '3xl': '5px 5px hsl(0, 0%, 7%)',
+             '4xl': '10px 10px hsl(0, 0%, 7%)',
+      }
           },
         },
       };
     </script>
     <title>Frontend Mentor | Blog preview card</title>
   </head>
-  <body>
-    <footer class="">
-      Challenge by
+  <body class="bg-yellow min-h-screen flex justify-center items-center gap-4 flex-col font-figtree">
+    <!-- main content -->
+    <main class="bg-white max-w-80 max-h-none border-2 border-black rounded-2xl shadow-3xl hover:shadow-4xl cursor-pointer">
+        <div class="m-6">
+            <figure class="w-full mx-auto mt-6">
+                <img src="./assets/images/illustration-article.svg" class="w-full rounded-2xl" alt="some image">
+            </figure>
+            <h2 class="font-bold bg-yellow inline-block px-2 py-1 rounded-md my-4">Learning</h2>
+            <p>Published 21 Dec 2023</p>
+            <h1 class="font-bold text-xl my-4 hover:text-yellow">HTML & CSS foundations</h1>
+            <p class="mb-4 text-grey">These languages are the backbone of every website, defining structure, content, and presentation</p>
+            <div class="flex items-center gap-3" >
+                <img src="./assets/images/image-avatar.webp" alt="user image">
+                <h2 class="font-bold"><a href="#">Greg Hoper</a></h2>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="flex justify-center">
+      <p>
+        Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Hemel</a>.
+      </p>
     </footer>
   </body>
 </html>
